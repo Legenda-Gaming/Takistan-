@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "tradingStroageItemname": "LB_SafeTradingStorage_100",
+    "storageLifetimeAfterTradingSeconds": 3600,
+    "allowTradingAnywhere": 0,
+    "allowTradingInTraderSafezones": 1,
+    "allowTradingInCustomZones": 0,
+    "customZones": [
+        {
+            "center": [
+                3707.550048828125,
+                310.0,
+                5990.02001953125
+            ],
+            "radius": 100.0
+        },
+        {
+            "center": [
+                11478.4404296875,
+                400.0,
+                11328.740234375
+            ],
+            "radius": 100.0
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "enabled": 1,
+    "spawnCost": 1000,
+    "timeoutSeconds": 1200,
+    "spawnName": "House",
+    "clearInventoryOnSpawn": 0,
+    "loadouts": []
+}

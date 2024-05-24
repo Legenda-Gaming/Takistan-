@@ -1,0 +1,119 @@
+{
+    "version": 18,
+    "spawn_clear_radius": 20.0,
+    "spawnPos": [
+        15345.98046875,
+        0.0,
+        15346.4501953125
+    ],
+    "random_spawn_cost_money": 0,
+    "random_ignore_timeouts": 1,
+    "force_exact_spawn_pos": 0,
+    "overwrite_default_spawnPos": 1,
+    "openSpawnMenuOnce": 1,
+    "forceOpenSpawnMenu": 1,
+    "hide_when_no_spawns_found": 1,
+    "show_cost_in_spawnmenu": 1,
+    "show_remaining_bag_uses_in_spawnmenu": 1,
+    "overwrite_stats_on_spawn": 0,
+    "water_on_spawn": 600,
+    "food_on_spawn": 600,
+    "health_on_spawn": 100,
+    "blood_on_spawn": 5000,
+    "death_spawn_block_radius": 1500,
+    "death_spawn_block_timeout": 1800,
+    "respawnOpenedMenuSpawnpoints": {
+        "disableRandomSpawn": 0,
+        "sleepingBags": 1,
+        "allSpawnPoints": 1,
+        "allHousePoints": 1,
+        "spawnPointsList": []
+    },
+    "firstJoinOpenedMenuSpawnpoints": {
+        "disableRandomSpawn": 0,
+        "sleepingBags": 1,
+        "allSpawnPoints": 1,
+        "allHousePoints": 1,
+        "spawnPointsList": []
+    },
+    "signs": [
+        {
+            "disableRandomSpawn": 0,
+            "sleepingBags": 1,
+            "allSpawnPoints": 1,
+            "allHousePoints": 1,
+            "spawnPointsList": [],
+            "itemname": "LBmaster_SpawnSign",
+            "requiredSpawnTicket": "",
+            "actionText": "#open"
+        },
+        {
+            "disableRandomSpawn": 0,
+            "sleepingBags": 0,
+            "allSpawnPoints": 0,
+            "allHousePoints": 1,
+            "spawnPointsList": [
+                "Green Mountain",
+                "Klen"
+            ],
+            "itemname": "LBmaster_SpawnSign_Safezone",
+            "requiredSpawnTicket": "LBmaster_SpawnTicket_1",
+            "actionText": "Teleport to Safezone"
+        },
+        {
+            "disableRandomSpawn": 0,
+            "sleepingBags": 1,
+            "allSpawnPoints": 0,
+            "allHousePoints": 1,
+            "spawnPointsList": [
+                "Chernogorsk",
+                "Elektrozavodsk",
+                "Spawn",
+                "Balota",
+                "Berezino",
+                "Solnechny"
+            ],
+            "itemname": "LBmaster_SpawnSign_Spawn",
+            "requiredSpawnTicket": "",
+            "actionText": "Spawn"
+        }
+    ],
+    "positions": [
+        {
+            "pos": [
+                6572.8095703125,
+                0.0,
+                7209.36181640625
+            ],
+            "name": "Falar",
+            "spawnCost": 0,
+            "timeout": 60,
+            "spawnRadius": 20,
+            "enabled": 1,
+            "spawnAtExactPosition": 0,
+            "spawnPlayerInAir": 0,
+            "heightOverGround": 300,
+            "clearInventoryOnSpawn": 0,
+            "loadouts": [],
+            "spawnPositions": []
+        },
+        {
+            "pos": [
+                3395.75390625,
+                0.0,
+                3685.671875
+            ],
+            "name": "Sawi",
+            "spawnCost": 0,
+            "timeout": 60,
+            "spawnRadius": 20,
+            "enabled": 1,
+            "spawnAtExactPosition": 0,
+            "spawnPlayerInAir": 0,
+            "heightOverGround": 300,
+            "clearInventoryOnSpawn": 0,
+            "loadouts": [],
+            "spawnPositions": []
+        }
+    ]
+}

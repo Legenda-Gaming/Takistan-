@@ -1,0 +1,17 @@
+{
+    "version": 4,
+    "canRepairRuinedItem": 0,
+    "repairMaxHealth": 0.800000011920929,
+    "repairHealthPerSecond": 0.009999999776482582,
+    "costPerHP": 2.0,
+    "costPerPercent": 10.0,
+    "costPerItem": 100.0,
+    "ruinedRepairCost": 2000.0,
+    "blacklist": [
+        "Ammunition_Base"
+    ],
+    "costMultiplier": {
+        "Rifle_Base": 2.0,
+        "Edible_Base": 0.5
+    }
+}

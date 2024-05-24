@@ -1,0 +1,230 @@
+[
+    {
+        "version": 4,
+        "classname": "LB_ATM_Green",
+        "position": [
+            3706.759033203125,
+            402.9024963378906,
+            5986.390625
+        ],
+        "orientation": [
+            -80.0,
+            0.0,
+            0.0
+        ],
+        "robPosition": "Green Mountain",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 0,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [
+            {
+                "requiredRobbingItem": "",
+                "robbingItemDamage": 50.0,
+                "robbingTimeMinutes": 15
+            }
+        ],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 248000,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    },
+    {
+        "version": 4,
+        "classname": "LB_ATM_Green",
+        "position": [
+            3751.105224609375,
+            311.91680908203127,
+            8913.1943359375
+        ],
+        "orientation": [
+            -155.0,
+            0.0,
+            0.0
+        ],
+        "robPosition": "Vybor Police Station",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 1,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [
+            {
+                "requiredRobbingItem": "",
+                "robbingItemDamage": 50.0,
+                "robbingTimeMinutes": 15
+            }
+        ],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 248000,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    },
+    {
+        "version": 4,
+        "classname": "LB_ATM_Green",
+        "position": [
+            8119.23828125,
+            296.06219482421877,
+            1991.882080078125
+        ],
+        "orientation": [
+            148.51856994628907,
+            0.0,
+            0.0
+        ],
+        "robPosition": "",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 0,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 244100,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    },
+    {
+        "version": 4,
+        "classname": "LB_ATM_2_Black",
+        "position": [
+            1431.2191162109376,
+            216.88572692871095,
+            3497.240966796875
+        ],
+        "orientation": [
+            66.0888900756836,
+            0.0,
+            0.0
+        ],
+        "robPosition": "",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 0,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 247154,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    },
+    {
+        "version": 4,
+        "classname": "LB_ATM_4_Black",
+        "position": [
+            1450.7655029296876,
+            215.7536163330078,
+            3536.57421875
+        ],
+        "orientation": [
+            168.56578063964845,
+            0.0,
+            0.0
+        ],
+        "robPosition": "",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 0,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 246400,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    },
+    {
+        "version": 4,
+        "classname": "LB_ATM_4_Black",
+        "position": [
+            1389.152099609375,
+            216.30455017089845,
+            3510.76513671875
+        ],
+        "orientation": [
+            67.97846984863281,
+            0.0,
+            0.0
+        ],
+        "robPosition": "",
+        "canDepositMoney": 1,
+        "canWithdrawMoney": 1,
+        "maxRobbingDistance": 5.0,
+        "spawnChance": 1.0,
+        "canBeRobbed": 0,
+        "spawnRobbedMoneyAtATM": 1,
+        "robbingConfig": [],
+        "minutesLockedAfterRobbing": 10,
+        "minutesNotRobbableAfterRobbing": 60,
+        "minutesRobberNeedsToWaitBeforeRobbingAgain": 1440,
+        "lastLockedTimestamp": 0,
+        "lastRobTime": 0,
+        "useDepositedCashToCalculateRobbedMoney": 1,
+        "cashDeposited": 246400,
+        "depositedCashIncreasePerMin": 20,
+        "robbedDepositedCashPercent": 0.10000000149011612,
+        "maxMoneyRobbedFromDepositedMoney": 20000,
+        "staticMinRobbedCash": 10000,
+        "staticMaxRobbedCash": 20000,
+        "needCreditCard": 0,
+        "lastRobbers": []
+    }
+]

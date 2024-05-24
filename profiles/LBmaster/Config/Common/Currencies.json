@@ -1,0 +1,48 @@
+{
+    "version": 3,
+    "thousandsSeparator": ".",
+    "currencyPrefix": "€",
+    "currencySuffix": "",
+    "currencyValues": [
+        {
+            "itemclassname": "TraderPlus_Money_Euro1",
+            "value": 1,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro2",
+            "value": 2,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro5",
+            "value": 5,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro10",
+            "value": 10,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro50",
+            "value": 50,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro100",
+            "value": 100,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro200",
+            "value": 200,
+            "depositableOnly": 0
+        },
+        {
+            "itemclassname": "TraderPlus_Money_Euro500",
+            "value": 500,
+            "depositableOnly": 0
+        }
+    ]
+}

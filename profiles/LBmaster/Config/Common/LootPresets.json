@@ -1,0 +1,1055 @@
+{
+    "version": 0,
+    "base": [
+        {
+            "presetName": "Preset_Weapons_Medium",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Preset_M4A1",
+                "Preset_SVD",
+                "Preset_SKS"
+            ],
+            "root": 1
+        },
+        {
+            "presetName": "Preset_Parachute",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "ADM_ParachuteBag_Fabric",
+                "ADM_ParachuteBag_RWB",
+                "ADM_ParachuteBag_Target",
+                "ADM_ParachuteBag_Skull",
+                "ADM_ParachuteBag_ADM"
+            ],
+            "root": 1
+        },
+        {
+            "presetName": "Preset_Military_Clothing",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Preset_Military_Clothing_TTSKO",
+                "Preset_Military_Clothing_Green",
+                "Preset_Military_Clothing_Black"
+            ],
+            "root": 1
+        },
+        {
+            "presetName": "Preset_Military_Clothing_TTSKO",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TTSKOPants",
+                "TTsKOJacket_Camo",
+                "TTSKOBoots",
+                "AssaultBag_Ttsko",
+                "Mich2001Helmet",
+                "Preset_Military_Clothing_Vests"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Military_Clothing_Green",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "CargoPants_Green",
+                "M65Jacket_Khaki",
+                "MilitaryBoots_Black",
+                "AssaultBag_Green",
+                "Mich2001Helmet",
+                "Preset_Military_Clothing_Vests"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Military_Clothing_Black",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "CargoPants_Black",
+                "M65Jacket_Black",
+                "MilitaryBoots_Black",
+                "AssaultBag_Black",
+                "Mich2001Helmet",
+                "Preset_Military_Clothing_Vests"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Military_Clothing_Vests",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [
+                "PoliceVest",
+                "UKAssVest_Camo",
+                "PlateCarrierVest"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "PlateCarrierAttachments",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "PlateCarrierHolster",
+                "PlateCarrierPouches"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Loadout",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Preset_Vanilla_Clothes",
+                "Preset_Vanilla_Items"
+            ],
+            "root": 1
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Preset_Vanilla_Clothes_White",
+                "Preset_Vanilla_Clothes_Red",
+                "Preset_Vanilla_Clothes_Green",
+                "Preset_Vanilla_Clothes_Blue",
+                "Preset_Vanilla_Clothes_Black"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Items",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Preset_Vanilla_Food",
+                "Preset_Vanilla_Lights",
+                "Preset_Vanilla_Rags"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes_White",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TShirt_White",
+                "SlacksPants_White",
+                "AthleticShoes_Grey"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes_Red",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TShirt_Red",
+                "ShortJeans_Red",
+                "AthleticShoes_Grey"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes_Green",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TShirt_Green",
+                "Jeans_Green",
+                "AthleticShoes_Green"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes_Blue",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TShirt_Blue",
+                "Jeans_Blue",
+                "AthleticShoes_Blue"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Clothes_Black",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "TShirt_Black",
+                "Jeans_Black",
+                "AthleticShoes_Black"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Rags",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "BandageDressing",
+                "Rags"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Lights",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Chemlight_White",
+                "Chemlight_Yellow",
+                "Chemlight_Green",
+                "Chemlight_Red"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Vanilla_Food",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Apple",
+                "Pear",
+                "Plum"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_Scopes_M4_Short",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "ACOGOptic",
+                "BUISOptic",
+                "M68Optic",
+                "ReflexOptic"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_STANAG_extra_Mags",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Mag_STANAG_30Rnd_70",
+                "Mag_STANAG_30Rnd_30"
+            ],
+            "root": 0
+        },
+        {
+            "presetName": "Preset_SVD_Extra",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Ammo_762x54_100F",
+                "Ammo_762x54_100R",
+                "Ammo_762x54_30F",
+                "Mag_SVD_10Rnd_F",
+                "Mag_SVD_10Rnd_70F"
+            ],
+            "root": 0
+        }
+    ],
+    "items": [
+        {
+            "presetName": "TShirt_White",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TShirt_White",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "SlacksPants_White",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "SlacksPants_White",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AthleticShoes_Grey",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "AthleticShoes_Grey",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TShirt_Red",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TShirt_Red",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ShortJeans_Red",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "ShortJeans_Red",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TShirt_Green",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TShirt_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Jeans_Green",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Jeans_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AthleticShoes_Green",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "AthleticShoes_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TShirt_Blue",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TShirt_Blue",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Jeans_Blue",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Jeans_Blue",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AthleticShoes_Blue",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "AthleticShoes_Blue",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TShirt_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TShirt_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Jeans_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Jeans_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AthleticShoes_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "AthleticShoes_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "BandageDressing",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "BandageDressing",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Rags",
+            "individualChance": 0,
+            "chance": 2.0,
+            "items": [],
+            "itemname": "Rag",
+            "addToHotbar": 1,
+            "quantmin": 4.0,
+            "quantmax": 6.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Chemlight_White",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Chemlight_White",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Chemlight_Yellow",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Chemlight_Yellow",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Chemlight_Green",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Chemlight_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Chemlight_Red",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Chemlight_Red",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Apple",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Apple",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Pear",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Pear",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Plum",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Plum",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Battery9V",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Battery9V",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ADM_ParachuteBag_Fabric",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ADM_ParachuteBag_Fabric",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ADM_ParachuteBag_RWB",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ADM_ParachuteBag_RWB",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ADM_ParachuteBag_Target",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ADM_ParachuteBag_Target",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ADM_ParachuteBag_Skull",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ADM_ParachuteBag_Skull",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ADM_ParachuteBag_ADM",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ADM_ParachuteBag_ADM",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TTSKOPants",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TTSKOPants",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TTsKOJacket_Camo",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TTsKOJacket_Camo",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "TTSKOBoots",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "TTSKOBoots",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AssaultBag_Ttsko",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "AssaultBag_Ttsko",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "CargoPants_Green",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "CargoPants_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "M65Jacket_Khaki",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "M65Jacket_Khaki",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "MilitaryBoots_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "MilitaryBoots_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AssaultBag_Green",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "AssaultBag_Green",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "CargoPants_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "CargoPants_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "M65Jacket_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "M65Jacket_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "MilitaryBoots_Black",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "MilitaryBoots_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AssaultBag_Black",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "AssaultBag_Black",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "PoliceVest",
+            "individualChance": 0,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "PoliceVest",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "UKAssVest_Camo",
+            "individualChance": 0,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "UKAssVest_Camo",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "PlateCarrierVest",
+            "individualChance": 0,
+            "chance": 0.699999988079071,
+            "items": [
+                "PlateCarrierAttachments"
+            ],
+            "itemname": "PlateCarrierVest",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "PlateCarrierHolster",
+            "individualChance": 1,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "PlateCarrierHolster",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "PlateCarrierPouches",
+            "individualChance": 1,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "PlateCarrierPouches",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ACOGOptic",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "ACOGOptic",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "BUISOptic",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [],
+            "itemname": "BUISOptic",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "M68Optic",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [
+                "Battery9V"
+            ],
+            "itemname": "M68Optic",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "ReflexOptic",
+            "individualChance": 0,
+            "chance": 0.5,
+            "items": [
+                "Battery9V"
+            ],
+            "itemname": "ReflexOptic",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Preset_M4A1",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "M4_Suppressor",
+                "M4_MPBttstck",
+                "M4_MPHndgrd",
+                "Preset_Scopes_M4_Short",
+                "Mag_STANAG_30Rnd_100",
+                "Preset_STANAG_extra_Mags"
+            ],
+            "itemname": "M4A1",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "hands"
+        },
+        {
+            "presetName": "M4_Suppressor",
+            "individualChance": 1,
+            "chance": 0.20000000298023225,
+            "items": [],
+            "itemname": "M4_Suppressor",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "M4_MPBttstck",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "M4_MPBttstck",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "M4_MPHndgrd",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "M4_MPHndgrd",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Mag_STANAG_30Rnd_100",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Mag_STANAG_30Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "mag"
+        },
+        {
+            "presetName": "Mag_STANAG_30Rnd_70",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "Mag_STANAG_30Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Mag_STANAG_30Rnd_30",
+            "individualChance": 1,
+            "chance": 0.30000001192092898,
+            "items": [],
+            "itemname": "Mag_STANAG_30Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Preset_SVD",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "AK_Suppressor",
+                "PSO1Optic",
+                "Mag_SVD_10Rnd",
+                "Preset_SVD_Extra"
+            ],
+            "itemname": "SVD",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "hands"
+        },
+        {
+            "presetName": "PSO1Optic",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [
+                "Battery9V"
+            ],
+            "itemname": "PSO1Optic",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "AK_Suppressor",
+            "individualChance": 1,
+            "chance": 0.20000000298023225,
+            "items": [],
+            "itemname": "AK_Suppressor",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Mag_SVD_10Rnd",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Mag_SVD_10Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "mag"
+        },
+        {
+            "presetName": "Ammo_762x54_100F",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Ammo_762x54",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Ammo_762x54_100R",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Ammo_762x54",
+            "addToHotbar": 0,
+            "quantmin": 0.5,
+            "quantmax": 1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Ammo_762x54_30F",
+            "individualChance": 1,
+            "chance": 0.30000001192092898,
+            "items": [],
+            "itemname": "Ammo_762x54",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Mag_SVD_10Rnd_F",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Mag_SVD_10Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Mag_SVD_10Rnd_70F",
+            "individualChance": 1,
+            "chance": 0.699999988079071,
+            "items": [],
+            "itemname": "Mag_SVD_10Rnd",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        },
+        {
+            "presetName": "Mich2001Helmet",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Mich2001Helmet",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "any"
+        },
+        {
+            "presetName": "Preset_SKS",
+            "individualChance": 0,
+            "chance": 1.0,
+            "items": [
+                "Ammo_762x39_L",
+                "Ammo_762x39_F"
+            ],
+            "itemname": "SKS",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "hands"
+        },
+        {
+            "presetName": "Ammo_762x39_L",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Ammo_762x39",
+            "addToHotbar": 0,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "mag"
+        },
+        {
+            "presetName": "Ammo_762x39_F",
+            "individualChance": 1,
+            "chance": 1.0,
+            "items": [],
+            "itemname": "Ammo_762x39",
+            "addToHotbar": 1,
+            "quantmin": -1.0,
+            "quantmax": -1.0,
+            "spawnIn": "root"
+        }
+    ]
+}

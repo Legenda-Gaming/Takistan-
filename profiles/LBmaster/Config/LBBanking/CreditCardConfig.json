@@ -1,0 +1,51 @@
+{
+    "enableCreditCardAccount": 0,
+    "enablePosTerminal": 0,
+    "enableCardPin": 1,
+    "cardPinLength": 4,
+    "lockCardAfterWrongPins": 1,
+    "lockWrongPins": 5,
+    "timeLockedMinutes": 10,
+    "canSeeBalanceWithoutPin": 0,
+    "printCardDupeWarnings": 1,
+    "defaultCreditCardMaxMoney": 100000,
+    "creditCardConfigs": [
+        {
+            "classname": "LB_ATM_Credit_Card_Black",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Blue",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Green",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_LightBlue",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Orange",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Pink",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Red",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_White",
+            "maxmoney": 100000
+        },
+        {
+            "classname": "LB_ATM_Credit_Card_Yellow",
+            "maxmoney": 100000
+        }
+    ],
+    "cardUIDCounterDONOTEDIT": 1
+}

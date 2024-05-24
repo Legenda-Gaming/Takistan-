@@ -1,0 +1,334 @@
+{
+    "version": 2,
+    "webhooks": [
+        {
+            "enabled": 1,
+            "description": "Test Webhook for demonstration",
+            "webhookURL": "https://discord.com/api/webhooks/....",
+            "webhookMessages": [
+                "GroupCreate",
+                "GroupDelete",
+                "GroupChat",
+                "GlobalChat",
+                "DirectChat",
+                "ATMRobbingSuccess"
+            ],
+            "overwrittenMessages": {}
+        },
+        {
+            "enabled": 1,
+            "description": "Kill",
+            "webhookURL": "https://discord.com/api/webhooks/1229404572645330995/7OSl6irU7aKianGFKHqis4QnIZ7VG0_cuxu_YD7j4BALESk-EpNbV5N7L70F3_IJnmfg",
+            "webhookMessages": [
+                "Kill_ANY",
+                "Kill_UNKNOWN",
+                "Kill_SUICIDE",
+                "Kill_TRAP",
+                "Kill_DROWNING",
+                "Kill_ANY_PLAYER",				
+                "Kill_HANDS",
+                "Kill_WEAPON",
+                "Kill_MELEE",
+                "Kill_STARVATION",
+                "Kill_GRENADE",
+                "Kill_VEHICLE",	
+                "Kill_FALL",
+                "Kill_ANIMAL",
+                "Kill_ZOMBIE",
+                "Kill_BLEEDING"			
+            ],
+            "overwrittenMessages": {
+                "ATMRobbingSuccess": {
+                    "message": "{}"
+                }
+            }
+        }		
+    ],
+    "webhookMessages": {
+        "ATMWithdrawPersonal": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money withdrawn from personal account\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money withdrawn\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_ANY": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"$$1$$\",\"description\":\"\",\"color\":16711680}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMGroupAccountCreated": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"ATM Group Account created\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$5$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMWithdrawGroup": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money withdrawn from Group Account\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money withdrawn\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_UNKNOWN": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player died from an unknown source\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/UNKNOWN.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_SUICIDE": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player commited suicide\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/SUICIDE.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMDepositPersonal": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money deposited to personal account\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money deposited\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupLeft": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Left\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GaragePlayerPacked": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Garage Packed\",\"description\":\"A player Garage was packed at X:$$4$$ Y:$$5$$ Z:$$6$$\",\"color\":16711680,\"fields\":[{\"name\":\"Packer\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Owner\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$3$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageSpawnareaSet": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Garage Spawnarea set\",\"description\":\"The Spawnarea of the Garage at X:$$3$$ Y:$$4$$ Z:$$5$$ was placed at X:$$6$$ Y:$$7$$ Z:$$8$$\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$9$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GlobalMarkerChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Global Marker Edited\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Old Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Name\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"New Position\",\"value\":\"X: $$5$$ Y: $$6$$ Z: $$7$$\"}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_TRAP": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed with a trap\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Trap\",\"value\":\"$$5$$\"}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/TRAP.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlayerMute": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player was muted\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Target\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Duration\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Muted By\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageWrongPinEntered": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Wrong Pin entered\",\"description\":\"Player entered wrong pin for garage at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Attempt\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageHacking_Start": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Hacking Started\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Hacker\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage Position\",\"value\":\"X:$$4$$ Y:$$5$$ Z:$$6$$\",\"inline\":true},{\"name\":\"Garage UID\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Time Remaining\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlayerUnmute": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player was unmuted\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Target\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Reason\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMDeleted": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Deleted an ATM\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Location\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupJoinAdmin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Joined Group\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Gropu Tag\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMDepositCreditcard": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money deposited to Credit Card\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money deposited\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Credit Card ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SpawnPlayerAtLocation": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Spawned at Spawn Location\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Location\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Exact Coords\",\"value\":\"X:$$4$$ Y:$$5$$ Z:$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupPromoteLeaderAdmin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Promoted player to Leader\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$7$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$8$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Old Rank\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Rank\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GaragePublicPlaced": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Public Garage was placed\",\"description\":\"A public Garage was placed at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SpawnPostionsUpdated": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Changed Spawn Positions config\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Positions\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_DROWNING": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player drowned\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/DROWNING.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMRobbingSuccess": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"The ATM at $$5$$ was Robbed\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Robber Name\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Robber Group\",\"value\":\"$$3$$ ($$4$$)\",\"inline\":true},{\"name\":\"Money Stolen\",\"value\":\"$$9$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_ANY_PLAYER": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"$$1$$ was killed by $$2$$ with $$3$$ from a distance of $$4$$\",\"description\":\"\",\"color\":16711680}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SleepingbagPacked": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Sleepingbag Packed\",\"description\":\"A sleepingbag was packed at X:$$4$$ Y:$$5$$ Z:$$6$$\",\"color\":65280,\"fields\":[{\"name\":\"Packer\",\"value\":\"[$$2$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$3$$)\",\"inline\":true},{\"name\":\"Bag ID\",\"value\":\"$$7$$\",\"inline\":true},{\"name\":\"Owner\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$1$$)\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_HANDS": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed with their fists\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/HANDS.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SpawnPlayerAtHouse": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Spawned at Sleeping Bag\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Exact Coords\",\"value\":\"X:$$4$$ Y:$$5$$ Z:$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMResetRobbers": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin reset robber info at ATM\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_WEAPON": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed with a weapon\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Weapon\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Distance\",\"value\":\"$$7$$\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/WEAPON.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleSold": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Sold\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Time in Garage\",\"value\":\"$$7$$\",\"inline\":true},{\"name\":\"Price\",\"value\":\"$$8$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleAttachmentsRepaired": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Attachments Repaired\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_MELEE": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed with a melee weapon\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Weapon\",\"value\":\"$$5$$\"}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/MELEE.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupDemotedAdmin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Demoted player in a group\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$7$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$8$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Old Rank\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Rank\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_STARVATION": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player died from starvation\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/STARVATION.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupJoinInvite": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player joined group by invite\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "CreditCardwrongPinEntered": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Entered from Credit Card Pin\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Credit Card ID\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Wrong Pins\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_GRENADE": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed with a grenade\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/GRENADE.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleRepaint": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle repainted\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Color\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMEdited": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Edited ATM settings\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Location\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupLevelChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Changed Group Level\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$5$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$6$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$1$$\",\"inline\":true},{\"name\":\"Gropu Tag\",\"value\":\"$$2$$\",\"inline\":true},{\"name\":\"Old Level\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Level\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GaragePinReset": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Pin reset\",\"description\":\"Pin reset for garage at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":16776960,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "CreditCardPinChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Credit Card Pin Changed\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Credit Card ID\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Old Pin\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"New Pin\",\"value\":\"$$5$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_VEHICLE": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed by a vehicle\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Driver\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$5$$\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/VEHICLE.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlotpoleClaimed": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Plotpole Claimed\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$5$$ Y: $$6$$ Z: $$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageHacked": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Garage was hacked\",\"description\":\"A garage was hacked at: X:$$5$$ Y:$$6$$ Z:$$7$$\",\"color\":16711680,\"fields\":[{\"name\":\"Hacker\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Vehicles Revealed\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SpawnPlayerAtSleepingbag": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Spawned at Sleeping Bag\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Bag ID\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Exact Coords\",\"value\":\"X:$$4$$ Y:$$5$$ Z:$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlayerJoined": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Joined the Server\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Obfuscated ID\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupNewLeader": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"New Leader\",\"description\":\"The Leader of the group left and it got a new Leader\",\"color\":65535,\"fields\":[{\"name\":\"Group Name\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Old Leader\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"New Leader\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupPromoteAdmin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Promoted player in a group\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$7$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$8$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Old Rank\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Rank\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleRefueld": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle refueled\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleBought": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player bought vehicle\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupKickAdmin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin kicked player from Group\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$5$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$6$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleStored": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Stored\",\"description\":\"A Vehicle was stored at X:$$4$$ Y:$$5$$ Z:$$6$$\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$8$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageSpawnareaReset": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage spawnarea reset\",\"description\":\"Spawnarea reset for garage at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":16776960,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMMoneyTransfer": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money Transfer\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"From\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"To\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Money Transfered\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Transfer Fee\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleDumped": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Dumped\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Time in Garage\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMRobbingStarted": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Robbing ATM at $$5$$ started\",\"description\":\"\",\"color\":16735744,\"fields\":[{\"name\":\"Robber Name\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Robber Group\",\"value\":\"$$3$$ ($$4$$)\",\"inline\":true},{\"name\":\"Robbing Time Left\",\"value\":\"$$9$$\"}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMEditMainConfig": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Changed Main ATM Config\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupNameChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Changed Group Name\",\"description\":\"\",\"color\":16776960,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$5$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$6$$)\",\"inline\":true},{\"name\":\"Old Name\",\"value\":\"$$1$$\",\"inline\":true},{\"name\":\"Old Tag\",\"value\":\"$$2$$\",\"inline\":true},{\"name\":\"New Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"New Tag\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMDepositGroup": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money deposited to Group Account\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money deposited\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GlobalMarkerAdded": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Global Marker added\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Marker Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupCreate": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Created\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlotpoleLostOwner": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Plotpole Lost Owner Group\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Group Tag\",\"value\":\"$$1$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$2$$ Y: $$3$$ Z: $$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMGroupAccountChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Account Changed\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Target Group\",\"value\":\"$$3$$ ($$4$$)\",\"inline\":true},{\"name\":\"Money\",\"value\":\"Before:$$5$$ After:$$6$$\",\"inline\":true},{\"name\":\"Has Account\",\"value\":\"Before:$$7$$ After:$$8$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "PlotpoleBuilt": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Plotpole built\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$5$$ Y: $$6$$ Z: $$7$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupDelete": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Deleted\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Group Name\",\"value\":\"$$1$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$2$$\",\"inline\":true},{\"name\":\"Reason\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_FALL": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player fell to his death\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/FALL.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMWithdrawCreditcard": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money withdrawn from Credit Card\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Money before\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Money withdrawn\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Money after\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Credit Card ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageHacking_Cancel": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Hacking Canceled\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Hacker\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage Position\",\"value\":\"X:$$4$$ Y:$$5$$ Z:$$6$$\",\"inline\":true},{\"name\":\"Garage UID\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GlobalChat": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Global Chat\",\"description\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$): $$3$$\",\"color\":$$4$$}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ChatCommandUsed": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player used a Chat command\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Command\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Arguments\",\"value\":\"$$4$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMPlaced": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Admin Placed an ATM\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Item Classname\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageUpgraded": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Upgraded\",\"description\":\"The Garage at X:$$3$$ Y:$$4$$ Z:$$5$$ was upgraded to the next level\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage Owner\",\"value\":\"[$$6$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$6$$)\",\"inline\":true},{\"name\":\"Garage Group\",\"value\":\"$$7$$\",\"inline\":true},{\"name\":\"New Level\",\"value\":\"$$8$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$9$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_ANIMAL": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed by an Animal\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Animal\",\"value\":\"$$3$$\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/ANIMAL.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GlobalMarkerRemoved": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Global Marker removed\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Marker Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Position\",\"value\":\"X: $$4$$ Y: $$5$$ Z: $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleChassisRepaired": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Chassis and Engine Repaired\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_ZOMBIE": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player was killed by an Infected\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Infected\",\"value\":\"$$3$$\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/ZOMBIE.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleWaterRefilled": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle water refilled\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$5$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Cost\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "DirectChat": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Direct Chat\",\"description\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$): $$3$$\",\"color\":$$4$$}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "SleepingBagPlaced": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Sleepingbag Placed\",\"description\":\"A sleepingbag was placed at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":65280,\"fields\":[{\"name\":\"Placed By\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Bag ID\",\"value\":\"$$6$$\",\"inline\":true},{\"name\":\"Count\",\"value\":\"$$7$$ of $$8$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Teamkill": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Teamkill\",\"description\":\"A Player killed another player from the same Group\",\"color\":16711680,\"fields\":[{\"name\":\"Victim\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Killer\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Group\",\"value\":\"$$5$$ ($$6$$)\",\"inline\":true},{\"name\":\"Weapon\",\"value\":\"$$7$$\",\"inline\":true},{\"name\":\"Victim Position\",\"value\":\"X:$$8$$ Y:$$9$$ Z:$$10$$\",\"inline\":true},{\"name\":\"Killer Position\",\"value\":\"X:$$11$$ Y:$$12$$ Z:$$13$$\",\"inline\":true},{\"name\":\"Distance\",\"value\":\"$$14$$m\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupChat": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Chat\",\"description\":\"[$$4$$] [$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$): $$5$$\",\"color\":$$6$$}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupUpgraded": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Upgraded\",\"description\":\"\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Level\",\"value\":\"$$5$$ -> $$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GroupTagColorChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Group Tag Color was Changed\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Group Name\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Group Tag\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Color\",\"value\":\"R: $$5$$ R: $$6$$ G: $$7$$\",\"inline\":true},{\"name\":\"Has Colored Tag\",\"value\":\"$$8$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "NoBuildZonesUpdated": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"No Build Zones changed\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Enabled\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Shown on Map\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"Zone Count\",\"value\":\"$$5$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GaragePlayerPlaced": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Garage Placed\",\"description\":\"A player Garage was placed at X:$$3$$ Y:$$4$$ Z:$$5$$\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMRobbingStopped": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Robbing ATM at $$1$$ was aborted\",\"description\":\"\",\"color\":16711680}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GaragePublicDeleted": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Public Garage was deleted\",\"description\":\"The Garage at X:$$3$$ Y:$$4$$ Z:$$5$$ was deleted by an Admin\",\"color\":16711680,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$6$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMMoneyDrop": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Money dropped to $$3$$\",\"description\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$) dropped $$5$$ for $$4$$ Players to $$3$$\",\"color\":65280}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "Kill_BLEEDING": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"A Player died through bleeding\",\"description\":\"\",\"color\":16711680,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true}],\"thumbnail\":{\"url\":\"https:\\/\\/lbmaster.de\\/killfeed\\/icons\\/BLEEDING.png\",\"height\":50,\"width\":50}}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "ATMPlayerAccountChanged": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Player Account Changed\",\"description\":\"\",\"color\":65535,\"fields\":[{\"name\":\"Admin\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Target Player\",\"value\":\"[$$3$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$4$$)\",\"inline\":true},{\"name\":\"Money\",\"value\":\"Before:$$5$$ After:$$6$$\",\"inline\":true},{\"name\":\"Max Bonus\",\"value\":\"Before:$$7$$ After:$$8$$\",\"inline\":true},{\"name\":\"Paycheck Bonus\",\"value\":\"Before:$$9$$ After:$$10$$\",\"inline\":true},{\"name\":\"Ignore Transfer Fee\",\"value\":\"Before:$$11$$ After:$$12$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "GarageChangePin": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Garage Pin Changed\",\"description\":\"The Pin of a Garage was changed at: X:$$5$$ Y:$$6$$ Z:$$7$$\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Garage ID\",\"value\":\"$$4$$\",\"inline\":true},{\"name\":\"New Pin\",\"value\":\"$$3$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        },
+        "VehicleRestored": {
+            "message": "{\"embeds\":[{\"type\":\"rich\",\"title\":\"Vehicle Restored\",\"description\":\"A Vehicle was restored at X:$$4$$ Y:$$5$$ Z:$$6$$\",\"color\":65280,\"fields\":[{\"name\":\"Player\",\"value\":\"[$$1$$](https:\\/\\/steamcommunity.com\\/profiles\\/$$2$$)\",\"inline\":true},{\"name\":\"Vehicle\",\"value\":\"$$3$$\",\"inline\":true},{\"name\":\"Vehicle ID\",\"value\":\"$$8$$\",\"inline\":true},{\"name\":\"Trader ID\",\"value\":\"$$7$$\",\"inline\":true},{\"name\":\"Time in Garage\",\"value\":\"$$10$$\",\"inline\":true}]}],\"allowed_mentions\":{\"parse\":[]}}"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "enablePlayerMarkers": 1,
+    "showMarkersEverywhere": 0,
+    "checkLineOfSight": 0,
+    "obfuscatePlayerNames": 0,
+    "showOwnPlayerTag": 1,
+    "maxPlayerDistance": 100.0,
+    "playerTagPrefix": "Player: ",
+    "playerTagColor": {
+        "a": 255,
+        "r": 51,
+        "g": 153,
+        "b": 255
+    },
+    "adminTagPrefix": "Admin: ",
+    "adminTagColor": {
+        "a": 255,
+        "r": 255,
+        "g": 0,
+        "b": 0
+    }
+}
